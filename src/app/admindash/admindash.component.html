@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+</style>
+
+<body>
+
+  <h2></h2>
+
+  <table style="width:100%">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Blood</th>
+      <th>Prescription</th>
+      <th>Dose</th>
+      <th>Urgency</th>
+    </tr>
+    <tr *ngFor="let patient of patients">
+      <td>{{patient.id}}</td>
+      <td>{{patient.name}}</td>
+      <td>{{patient.age}}</td>
+      <td>{{patient.blood}}</td>
+      <td>{{patient.prescription}}</td>
+      <td>{{patient.dose}}</td>
+      <td>{{patient.fees}}</td>
+      <td>{{patient.urgency}}</td>
+    </tr>
+
+  </table>
+
+</body>
+
+</html>
