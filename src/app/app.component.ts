@@ -12,15 +12,3 @@ export class AppComponent {
     private http: HttpClient) { }
 }
 
-// ) {
-//   http.get("http://localhost:8080").subscribe(
-
-//     (res) => {
-
-//     }
-
-//   )
-
-// }
-
-//}

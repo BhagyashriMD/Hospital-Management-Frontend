@@ -3,40 +3,28 @@ import { PatientService } from '../patient.service';
 import { Patient } from '../patient';
 
 @Component({
-  selector: 'app-admindash',
-  templateUrl: './admindash.component.html',
-  styleUrl: './admindash.component.css'
+  selector: 'app-docdash',
+  templateUrl: './docdash.component.html',
+  styleUrl: './docdash.component.css'
 })
-export class AdmindashComponent {
-  patients: Patient[] = [];
+export class DocdashComponent {
   constructor(private patientService: PatientService) { }
-
   ngOnInit(): void {
-    this.getPatients();
-
+    this.getPatientList();
   }
+  patient: Patient[] = [];
 
-
-
-  getPatients() {
-
+  getPatientList() {
     this.patientService.getPatientList().subscribe(data => {
-      this.patients = data;
-    }
-    )
+      this.patient = data;
+    })
   }
+
   delete(id: number) {
     this.patientService.delete(id).subscribe(data => {
       console.log("data");
-      this.getPatients();
+      this.getPatientList();
     })
   }
+
 }
-
-
-
-
-
-
-
-

@@ -9,20 +9,26 @@ import { AppointmentComponent } from './appointment/appointment.component';
 import { CreateAppointmentComponent } from './create-appointment/create-appointment.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { DocdashComponent } from './docdash/docdash.component';
+import { CreatePatientComponent } from './create-patient/create-patient.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdmindashComponent,
     AppointmentComponent,
-    CreateAppointmentComponent
+    CreateAppointmentComponent,
+    HomeComponent,
+    DocdashComponent,
+    CreatePatientComponent
   ],
   imports: [
     RouterModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    //FormsModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   providers: [],

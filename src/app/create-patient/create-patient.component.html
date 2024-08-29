@@ -1,0 +1,46 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+
+  <a style="color: white;" class="navbar-brand" href="#"> Healing and Touch Hospital</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <a style="color: white;" class="nav-link active" aria-current="page" href="javascript:void(0);"
+        routerLink="/docdash">Back</a>
+    </ul>
+  </div>
+
+</nav>
+
+<div class="container">
+  <h2>Add new Patient</h2>
+  <form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" formControlName="name" id="name" class="form-control" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" formControlName="age" id="age" class="form-control" placeholder="Enter age">
+    </div>
+    <div class="form-group">
+      <label for="fees">Fees</label>
+      <input type="number" formControlName="fees" id="fees" class="form-control" placeholder="Enter fees">
+    </div>
+    <div class="form-group">
+      <label for="urgency">Urgency</label>
+      <select formControlName="urgency" id="urgency" class="form-control">
+        <option value="">Select Urgency</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="!patientForm.valid">Submit</button>
+  </form>
+</div>
