@@ -15,9 +15,6 @@ export class AdmindashComponent {
     this.getPatients();
 
   }
-
-
-
   getPatients() {
 
     this.patientService.getPatientList().subscribe(data => {

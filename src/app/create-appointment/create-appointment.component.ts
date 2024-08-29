@@ -9,33 +9,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './create-appointment.component.html',
   styleUrl: './create-appointment.component.css'
 })
-// export class CreateAppointmentComponent {
-
-//   appointment: Appointment = new Appointment();
-
-//   constructor(private appointmentService: AppointmentService, private router: Router) { };
-
-// saveAppointment() {
-
-//   console.log("save appointment");
-
-//   this.appointmentService.createAppointment(this.appointment).subscribe(data => {
-//     console.log(data);
-//     console.log(this.appointment);
-
-//     this.goToAppointment();
-//   })
-
-
-// onSubmit() {
-//   console.log("onsubmit ");
-//   this.saveAppointment();
-
-// }
-
-// goToAppointment() {
-//   this.router.navigate([`/appointmentlist`]);
-// }
 
 export class CreateAppointmentComponent implements OnInit {
   appointmentForm!: FormGroup;
