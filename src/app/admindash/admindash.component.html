@@ -33,25 +33,32 @@
   <div class="tableFixHead">
     <br>
 
-    <table style="width:100%">
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Fees</th>
-        <th>Urgency</th>
-        <th>Action</th>
-      </tr>
-      <!-- patients is a array of type Patient -->
-      <tr *ngFor="let patient of patients">
-        <td>{{patient.id}}</td>
-        <td>{{patient.name}}</td>
-        <td>{{patient.age}}</td>
-        <td>{{patient.fees}}</td>
-        <td>{{patient.urgency}}</td>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Fees</th>
+          <th scope="col">Urgency</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <!-- patients is a array of type Patient -->
+        <tr *ngFor="let patient of patients">
+          <th scope="row">1</th>
+          <td>{{patient.id}}</td>
+          <td>{{patient.name}}</td>
+          <td>{{patient.age}}</td>
+          <td>{{patient.fees}}</td>
+          <td>{{patient.urgency}}</td>
 
 
-        <button (click)="delete(patient.id)" class="btn btn-danger">Delete</button>
-      </tr>
+          <button (click)="delete(patient.id)" class="btn btn-danger">Delete</button>
+        </tr>
+      </tbody>
 
     </table>

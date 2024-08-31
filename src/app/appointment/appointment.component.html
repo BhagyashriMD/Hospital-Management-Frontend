@@ -38,28 +38,33 @@
 
   <body>
 
-    <table style="width:100%">
-      <tr>
-        <th>Id</th>
-        <th>Age</th>
-        <th>Name</th>
-        <th>Symptoms</th>
-        <th>Number</th>
-        <th>Action</th>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Symptoms</th>
+          <th scope="col">Number</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
 
-      </tr>
-      <tr *ngFor="let appointment of appointment">
-        <td>{{appointment.id}}</td>
-        <td>{{appointment.age}}</td>
-        <td>{{appointment.name}}</td>
-        <td>{{appointment.symptoms}}</td>
-        <td>{{appointment.number}}</td>
-        <td>
+        <tr *ngFor="let appointment of appointment">
 
-          <button (click)="delete(appointment.id)" class="btn btn-danger">Delete</button>
-          <!-- <button (click)="delete(appointment.id)" class="btn btn-danger" style="margin-left: 10px;">Delete</button> -->
-        </td>
+          <td>{{appointment.id}}</td>
+          <td>{{appointment.age}}</td>
+          <td>{{appointment.name}}</td>
+          <td>{{appointment.symptoms}}</td>
+          <td>{{appointment.number}}</td>
+          <td>
 
-      </tr>
+            <button (click)="delete(appointment.id)" class="btn btn-danger">Delete</button>
+            <!-- <button (click)="delete(appointment.id)" class="btn btn-danger" style="margin-left: 10px;">Delete</button> -->
+          </td>
+
+        </tr>
+      </tbody>
 
     </table>

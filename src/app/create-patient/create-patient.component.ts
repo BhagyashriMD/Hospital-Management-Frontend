@@ -4,6 +4,7 @@ import { PatientService } from '../patient.service';
 import { Route, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+
 @Component({
   selector: 'app-create-patient',
   templateUrl: './create-patient.component.html',

@@ -12,6 +12,10 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { DocdashComponent } from './docdash/docdash.component';
 import { CreatePatientComponent } from './create-patient/create-patient.component';
+import { CommonModule } from '@angular/common';
+import { MedicineComponent } from './medicine/medicine.component';
+import { AddmedicineComponent } from './addmedicine/addmedicine.component';
+// import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,10 @@ import { CreatePatientComponent } from './create-patient/create-patient.componen
     CreateAppointmentComponent,
     HomeComponent,
     DocdashComponent,
-    CreatePatientComponent
+    CreatePatientComponent,
+    MedicineComponent,
+    AddmedicineComponent
+    // BrowserModule
   ],
   imports: [
     RouterModule,
@@ -29,7 +36,8 @@ import { CreatePatientComponent } from './create-patient/create-patient.componen
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
