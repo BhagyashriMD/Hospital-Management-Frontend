@@ -8,6 +8,7 @@ import { DocdashComponent } from './docdash/docdash.component';
 import { CreatePatientComponent } from './create-patient/create-patient.component';
 import { MedicineComponent } from './medicine/medicine.component';
 import { AddmedicineComponent } from './addmedicine/addmedicine.component';
+import { UpdatePatientComponent } from './update-patient/update-patient.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'docdash', component: DocdashComponent },
   { path: 'create-patient', component: CreatePatientComponent },
   { path: 'addmedicine', component: AddmedicineComponent },
-  { path: 'medicine', component: MedicineComponent }
+  { path: 'medicine', component: MedicineComponent },
+  { path: 'updatepatient/:id', component: UpdatePatientComponent }
 
 ];
 

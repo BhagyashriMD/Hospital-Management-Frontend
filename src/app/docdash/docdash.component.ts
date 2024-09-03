@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PatientService } from '../patient.service';
 import { Patient } from '../patient';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-docdash',
@@ -8,7 +9,9 @@ import { Patient } from '../patient';
   styleUrl: './docdash.component.css'
 })
 export class DocdashComponent {
-  constructor(private patientService: PatientService) { }
+  constructor(private patientService: PatientService, private router: Router) {
+
+  }
   ngOnInit(): void {
     this.getPatientList();
   }
@@ -26,5 +29,10 @@ export class DocdashComponent {
       this.getPatientList();
     })
   }
+  update(id: number) {
+    this.router.navigate(['updatepatient', id])
+
+  }
 
 }
+

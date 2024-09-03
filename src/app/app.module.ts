@@ -15,6 +15,7 @@ import { CreatePatientComponent } from './create-patient/create-patient.componen
 import { CommonModule } from '@angular/common';
 import { MedicineComponent } from './medicine/medicine.component';
 import { AddmedicineComponent } from './addmedicine/addmedicine.component';
+import { UpdatePatientComponent } from './update-patient/update-patient.component';
 // import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
@@ -27,7 +28,8 @@ import { AddmedicineComponent } from './addmedicine/addmedicine.component';
     DocdashComponent,
     CreatePatientComponent,
     MedicineComponent,
-    AddmedicineComponent
+    AddmedicineComponent,
+    UpdatePatientComponent
     // BrowserModule
   ],
   imports: [

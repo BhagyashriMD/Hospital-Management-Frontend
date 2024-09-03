@@ -1,0 +1,70 @@
+<!-- <div class="container">
+  <h2>Update Patient</h2>
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter name"
+        [(ngModel)]="patient.name" />
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" class="form-control" placeholder="Enter age" [(ngModel)]="patient.age" />
+    </div>
+
+    <div class="form-group">
+      <label for="fees">Fees</label>
+      <input type="number" name="fees" id="fees" class="form-control" placeholder="Enter fees"
+        [(ngModel)]="patient.fees" />
+    </div>
+
+    <div class="form-group">
+      <label for="urgency">Urgency</label>
+      <input type="text" name="urgency" id="urgency" class="form-control" placeholder="Enter urgency"
+        [(ngModel)]="patient.urgency" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div> -->
+<!-- <form (ngSubmit)="onSubmit()" #form="ngForm"> -->
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" class="form-control" placeholder="Enter name" [(ngModel)]="patient.name"
+      #name="ngModel" required />
+    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
+      Name is required.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" class="form-control" placeholder="Enter age" [(ngModel)]="patient.age"
+      #age="ngModel" required min="0" />
+    <div *ngIf="age.invalid && (age.dirty || age.touched)" class="text-danger">
+      Age is required and must be a non-negative number.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="fees">Fees</label>
+    <input type="number" name="fees" id="fees" class="form-control" placeholder="Enter fees" [(ngModel)]="patient.fees"
+      #fees="ngModel" required min="0" />
+    <div *ngIf="fees.invalid && (fees.dirty || fees.touched)" class="text-danger">
+      Fees are required and must be a non-negative number.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="urgency">Urgency</label>
+    <input type="text" name="urgency" id="urgency" class="form-control" placeholder="Enter urgency"
+      [(ngModel)]="patient.urgency" #urgency="ngModel" required />
+    <div *ngIf="urgency.invalid && (urgency.dirty || urgency.touched)" class="text-danger">
+      Urgency is required.
+    </div>
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+  <!-- <button type="submit" class="btn btn-success" [disabled]="form.invalid">Submit</button> -->
+</form>
