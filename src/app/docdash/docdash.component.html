@@ -57,8 +57,8 @@
           <td>{{patient.fees}}</td>
           <td>{{patient.urgency}}</td>
           <td>
-
-            <button (click)="update(patient.id)" class="btn btn-success">Update</button>
+            <button (click)="view(patient.id)" class="btn btn-info" style="margin-left: 10px;">View</button>
+            <button (click)="update(patient.id)" class="btn btn-success" style="margin-left: 10px;">Update</button>
             <button (click)="delete(patient.id)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
           </td>
         </tr>

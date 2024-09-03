@@ -33,6 +33,9 @@ export class DocdashComponent {
     this.router.navigate(['updatepatient', id])
 
   }
+  view(id: number) {
+    this.router.navigate(['viewpatient', id])
+  }
 
 }
 

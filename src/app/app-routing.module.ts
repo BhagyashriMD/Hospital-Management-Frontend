@@ -9,6 +9,7 @@ import { CreatePatientComponent } from './create-patient/create-patient.componen
 import { MedicineComponent } from './medicine/medicine.component';
 import { AddmedicineComponent } from './addmedicine/addmedicine.component';
 import { UpdatePatientComponent } from './update-patient/update-patient.component';
+import { ViewPatientComponent } from './view-patient/view-patient.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'create-patient', component: CreatePatientComponent },
   { path: 'addmedicine', component: AddmedicineComponent },
   { path: 'medicine', component: MedicineComponent },
-  { path: 'updatepatient/:id', component: UpdatePatientComponent }
+  { path: 'updatepatient/:id', component: UpdatePatientComponent },
+  { path: 'viewpatient/:id', component: ViewPatientComponent }
 
 ];
 
