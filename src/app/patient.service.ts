@@ -37,10 +37,7 @@ export class PatientService {
     return this.httpClient.post(this.baseUrl, patientData);
   }
 
-  // updatePatient(patient: Patient): Observable<Object> {
-  //   console.log("in patient service", patient)
-  //   return this.httpClient.put(`${this.baseUrl}/${patient.id}`, patient);
-  // }
+
   updatePatient(id: number, patient: Patient): Observable<object> {
     return this.httpClient.put(`${this.baseUrl}/${id}`, patient);
   }

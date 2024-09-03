@@ -32,7 +32,7 @@ import { ViewPatientComponent } from './view-patient/view-patient.component';
     AddmedicineComponent,
     UpdatePatientComponent,
     ViewPatientComponent
-    // BrowserModule
+
   ],
   imports: [
     RouterModule,

@@ -17,7 +17,7 @@ export class MedicineComponent {
   }
 
   getMedicine() {
-    console.log("inmedicines1")
+
     this.medicineService.getAllMedicine().subscribe(data => {
       console.log("inmedicines2")
       this.medicines = data;

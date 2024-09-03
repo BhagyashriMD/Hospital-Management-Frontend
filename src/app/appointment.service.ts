@@ -12,8 +12,7 @@ export class AppointmentService {
   private baseUrl = "http://localhost:8080/api/v2/appointment"
 
   getAllAppoitments(): Observable<Appointment[]> {
-    //console.log(this.baseUrl);
-    //return this.httpClient.get<Appointment[]>(`$(this.baseUrl)`);
+
     return this.httpClient.get<Appointment[]>(`${this.baseUrl}`);
   }
   createAppointment(appointment: Appointment): Observable<Appointment> {
