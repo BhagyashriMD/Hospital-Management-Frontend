@@ -36,9 +36,8 @@
       <label for="urgency">Urgency</label>
       <select formControlName="urgency" id="urgency" class="form-control">
         <option value="">Select Urgency</option>
-        <option value="low">Low</option>
-        <option value="medium">Medium</option>
-        <option value="high">High</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
       </select>
     </div>
     <button type="submit" class="btn btn-success" [disabled]="!patientForm.valid">Submit</button>
