@@ -1,0 +1,25 @@
+/* .card {
+  border: black;
+  border-radius: 30px;
+  width: 500px;
+  padding: 40px;
+  top: 40%;
+  left: 30%;
+  transform: translate(30%, -25%);
+  background: lightgoldenrodyellow;
+  justify-content: center;
+  color: black;
+  justify-items: center;
+  box-shadow: 10px 10px 10px rgb(120, 120, 120);
+
+} */
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: lightsteelblue
+}

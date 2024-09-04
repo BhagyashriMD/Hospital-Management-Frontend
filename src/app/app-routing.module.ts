@@ -10,6 +10,7 @@ import { MedicineComponent } from './medicine/medicine.component';
 import { AddmedicineComponent } from './addmedicine/addmedicine.component';
 import { UpdatePatientComponent } from './update-patient/update-patient.component';
 import { ViewPatientComponent } from './view-patient/view-patient.component';
+import { DocloginComponent } from './doclogin/doclogin.component';
 
 
 const routes: Routes = [
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'addmedicine', component: AddmedicineComponent },
   { path: 'medicine', component: MedicineComponent },
   { path: 'updatepatient/:id', component: UpdatePatientComponent },
-  { path: 'viewpatient/:id', component: ViewPatientComponent }
+  { path: 'viewpatient/:id', component: ViewPatientComponent },
+  { path: 'doclogin', component: DocloginComponent }
 
 ];
 
