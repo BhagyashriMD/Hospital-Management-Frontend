@@ -8,7 +8,7 @@ export class DocauthService {
   constructor() { }
   authenticate(username: string, password: string) {
 
-    if (username == "admin" && password == "123456") {
+    if (username == "doctor" && password == "123456") {
       sessionStorage.setItem('username', username)
       return true
     }

@@ -7,14 +7,27 @@ export class AdauthService {
 
   constructor() { }
 
-  authenticate(username: string, password: string) {
+  authenticate(username2: string, password2: string) {
 
-    if (username == "admin" && password == "123456") {
-      sessionStorage.setItem('username', username)
-      return true
+
+    if (username2 == "admin" && password2 == "123456") {
+      sessionStorage.setItem('username2', username2)
+      return true;
     }
     else {
       return false;
     }
+  }
+
+  isUserLoggedIn() {
+
+    console.log("User is logged in:");
+    let user = sessionStorage.getItem('username2');
+    return !(user == null)
+
+  }
+
+  logout() {
+    sessionStorage.removeItem('username2');
   }
 }
