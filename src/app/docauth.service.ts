@@ -17,4 +17,16 @@ export class DocauthService {
     }
   }
 
+  isUserLoggedIn() {
+
+    console.log("User is logged in:");
+    let user = sessionStorage.getItem('username');
+    return !(user == null)
+
+  }
+
+  logout() {
+    sessionStorage.removeItem('username');
+  }
+
 }

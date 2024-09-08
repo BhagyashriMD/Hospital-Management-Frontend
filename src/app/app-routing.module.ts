@@ -13,6 +13,7 @@ import { ViewPatientComponent } from './view-patient/view-patient.component';
 import { DocloginComponent } from './doclogin/doclogin.component';
 import { AdloginComponent } from './adlogin/adlogin.component';
 import { AdminauthguardService } from './adminauthguard.service';
+import { DocauthguardService } from './docauthguard.service';
 
 
 const routes: Routes = [
@@ -22,12 +23,12 @@ const routes: Routes = [
   { path: 'create-appointment', component: CreateAppointmentComponent },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'docdash', component: DocdashComponent },
-  { path: 'create-patient', component: CreatePatientComponent },
+  { path: 'docdash', component: DocdashComponent, canActivate: [DocauthguardService] },
+  { path: 'create-patient', component: CreatePatientComponent, canActivate: [DocauthguardService] },
   { path: 'addmedicine', component: AddmedicineComponent },
   { path: 'medicine', component: MedicineComponent },
-  { path: 'updatepatient/:id', component: UpdatePatientComponent },
-  { path: 'viewpatient/:id', component: ViewPatientComponent },
+  { path: 'updatepatient/:id', component: UpdatePatientComponent, canActivate: [DocauthguardService] },
+  { path: 'viewpatient/:id', component: ViewPatientComponent, canActivate: [DocauthguardService] },
   { path: 'doclogin', component: DocloginComponent },
   { path: 'adlogin', component: AdloginComponent }
 
