@@ -1,0 +1,19 @@
+table {
+  background-color: ivory;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+
+}
+
+th {
+  background-color: lightgoldenrodyellow;
+}
+
+td,
+th {
+  text-align: center;
+}

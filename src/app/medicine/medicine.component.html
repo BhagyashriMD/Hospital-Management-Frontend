@@ -29,11 +29,11 @@
 
 
   <br>
-  <a style="color: rgb(86, 86, 86); font-size: xx-large;">Current Medicine List :</a>
+  <a style="color: rgb(86, 86, 86); font-size: xx-large;"><b>Current Medicine List</b></a>
   <div class="tableFixHead">
     <br>
 
-    <table class="table table-striped">
+    <table class="table table-hover table table-bordered">
       <thead>
         <tr>
           <th scope="col">Id</th>
@@ -50,8 +50,9 @@
           <td>{{medicine.id}}</td>
           <td>{{medicine.drugName}}</td>
           <td>{{medicine.stock}}</td>
-          <button (click)="delete(medicine.id)" class="btn btn-danger">Delete</button>
-
+          <td>
+            <button (click)="delete(medicine.id)" class="btn btn-danger" style="margin-left: 100px">Delete</button>
+          </td>
         </tr>
       </tbody>
     </table>

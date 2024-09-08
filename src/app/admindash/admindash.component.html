@@ -23,7 +23,7 @@
 
 <div class="container">
   <hr>
-  <h2 style="text-align: center;margin-top: 20PX;">Admin Dashboard</h2>
+  <h2 style="text-align: center;margin-top: 20PX;"><b>Admin Dashboard</b></h2>
   <a style="color: rgb(86, 86, 86); font-size: x-large;">
     <marquee behavior="scroll" direction="left">
       Welcome to Admin Dashboard. Please find the patient list below!!. Click Appointments to view and update
@@ -36,7 +36,7 @@
   <div class="tableFixHead">
     <br>
 
-    <table class="table table-striped">
+    <table class="table table-hover table table-bordered">
       <thead>
         <tr>
           <th scope="col">Id</th>
@@ -59,8 +59,9 @@
           <td>{{patient.fees}}</td>
           <td>{{patient.urgency}}</td>
 
-
-          <button (click)="delete(patient.id)" class="btn btn-danger">Delete</button>
+          <td>
+            <button (click)="delete(patient.id)" class="btn btn-danger">Delete</button>
+          </td>
         </tr>
       </tbody>
 
