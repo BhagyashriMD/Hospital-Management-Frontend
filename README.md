@@ -8,7 +8,11 @@ Admin dashboard displays the current patient list excluding a few sensitive diag
 
 Sprinboot is used as a middleware for database connection and API generation. MySQL8 workbench is used as the database. Angular  is used as the frontend framework for component generation, routing, state management, and API calling for all the components.
 
+# Key features of our system include:
 
+1. Patient Management: Allows staff to register patients, update their information, and view their history.
+2. Appointment Scheduling: Allows staff to register booking and manage patient appointments.
+3. Separate dashboards for doctors and admins
 
 # Tech Stack
 
