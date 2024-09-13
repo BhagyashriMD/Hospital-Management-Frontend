@@ -27,17 +27,16 @@ Sprinboot is used as a middleware for database connection and API generation. My
 
 7. Medicine List component:
 ![medicallist](https://github.com/user-attachments/assets/6fa06667-769c-444e-96b4-1ca30e9949b3)
-8.
+
+9. Admin Login component:
 ![185597341-bed9ca37-0a27-4709-9e97-06f217b65b24](https://github.com/user-attachments/assets/a66472af-d198-487c-b401-dbd9de97b10e)
-9.
+
+11. Admin Dashboard component:
 ![185597407-8a982dba-0724-42d7-8837-118ad7a2c704](https://github.com/user-attachments/assets/a4364952-a0b3-4900-b858-9ced47895d82)
-10.
+
+10. Appointments:
 ![185597534-5e430d89-4cb5-47a3-b523-058a5aebdeca](https://github.com/user-attachments/assets/747809b6-70b6-4a75-ad05-cd14c95d6e46)
 
-18. Add Medicine component:
-19. Admin Login component:
-20. Admin Dashboard component:
-21. Appointments:
 
 
 
