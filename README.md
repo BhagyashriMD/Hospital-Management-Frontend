@@ -1,3 +1,23 @@
+# Hospital Management System Project
+
+The Hospital Management Application is built with Angular and Springboot. The primary objective of the project is to design and develop a hospital management website that can be accessed by the doctor and admin.
+
+The doctor has the authority to view the current list of patients who are under treatment, including their diagnostic details. The doctor can perform CRUD operations with the patients on his dashboard. The doctor has access to add and maintain the medicine list in his dashboard.
+
+Admin dashboard displays the current patient list excluding a few sensitive diagnostic details. Admin has access to maintain the appointment list in his dashboard. Admin can also perform CRUD operations in the appointment list.
+
+Sprinboot is used as a middleware for database connection and API generation. MySQL8 workbench is used as the database. Angular  is used as the frontend framework for component generation, routing, state management, and API calling for all the components. This project was generated with Angular CLI version 14.0.4.
+
+# Tech Stack
+
+Client: Angular, HTML, Typescript, CSS, Javascript
+
+Server: Spring boot, Java
+
+Database: MySQL8
+
+
+
 # FrontendForHospitalMgmtSystem
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
