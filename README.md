@@ -18,9 +18,9 @@ Server: Spring boot, Java
 
 Database: MySQL8
 
-# 1. Home Page of the Application:
+## 1. Home Page of the Application:
 ![home](https://github.com/user-attachments/assets/d1f37ba4-d65e-4153-b0b8-76aa6fb1dad4)
-# 2. News Feeds:
+## 2. News Feeds:
 ![news](https://github.com/user-attachments/assets/4e779d76-2162-4568-ae32-1900d899ddea)
 
 # 3. Doctor Login Component with Authentication:
