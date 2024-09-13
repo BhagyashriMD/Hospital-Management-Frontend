@@ -6,7 +6,7 @@ The doctor has the authority to view the current list of patients who are under 
 
 Admin dashboard displays the current patient list excluding a few sensitive diagnostic details. Admin has access to maintain the appointment list in his dashboard. Admin can also perform CRUD operations in the appointment list.
 
-Sprinboot is used as a middleware for database connection and API generation. MySQL8 workbench is used as the database. Angular  is used as the frontend framework for component generation, routing, state management, and API calling for all the components. This project was generated with Angular CLI version 14.0.4.
+Sprinboot is used as a middleware for database connection and API generation. MySQL8 workbench is used as the database. Angular  is used as the frontend framework for component generation, routing, state management, and API calling for all the components.
 
 # Tech Stack
 
