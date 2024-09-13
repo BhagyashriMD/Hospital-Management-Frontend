@@ -20,31 +20,31 @@ Database: MySQL8
 
 ### 1. Home Page of the Application:
 ![home](https://github.com/user-attachments/assets/d1f37ba4-d65e-4153-b0b8-76aa6fb1dad4)
-## 2. News Feeds:
+### 2. News Feeds:
 ![news](https://github.com/user-attachments/assets/4e779d76-2162-4568-ae32-1900d899ddea)
 
-# 3. Doctor Login Component with Authentication:
+### 3. Doctor Login Component with Authentication:
 ![doctorlogin](https://github.com/user-attachments/assets/a97674ae-2578-43ce-ba5e-b25a2229d7da)
 
-# 4. Doctor Dashboard Component:
+### 4. Doctor Dashboard Component:
 ![doctordashboard](https://github.com/user-attachments/assets/ab0b10f6-2e71-445a-93bd-279022f7d88f)
 
-# 5. Add Patient component:
+### 5. Add Patient component:
 ![addp](https://github.com/user-attachments/assets/448bd631-53fb-4367-9dd4-850173aff46b)
 
-# 6. Updating Patient Details:
+### 6. Updating Patient Details:
 ![updatingp](https://github.com/user-attachments/assets/30693dc5-2c32-4ac2-8ec5-5229a72c2f5a)
 
-# 7. Medicine List component:
+### 7. Medicine List component:
 ![medicallist](https://github.com/user-attachments/assets/6fa06667-769c-444e-96b4-1ca30e9949b3)
 
-# 9. Admin Login component:
+### 9. Admin Login component:
 ![185597341-bed9ca37-0a27-4709-9e97-06f217b65b24](https://github.com/user-attachments/assets/a66472af-d198-487c-b401-dbd9de97b10e)
 
-# 11. Admin Dashboard component:
+### 11. Admin Dashboard component:
 ![185597407-8a982dba-0724-42d7-8837-118ad7a2c704](https://github.com/user-attachments/assets/a4364952-a0b3-4900-b858-9ced47895d82)
 
-# 10. Appointments:
+### 10. Appointments:
 ![185597534-5e430d89-4cb5-47a3-b523-058a5aebdeca](https://github.com/user-attachments/assets/747809b6-70b6-4a75-ad05-cd14c95d6e46)
 
 
