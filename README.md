@@ -8,6 +8,16 @@ Admin dashboard displays the current patient list excluding a few sensitive diag
 
 Sprinboot is used as a middleware for database connection and API generation. MySQL8 workbench is used as the database. Angular  is used as the frontend framework for component generation, routing, state management, and API calling for all the components.
 
+
+
+# Tech Stack
+
+Client: Angular, HTML, Typescript, CSS, Javascript
+
+Server: Spring boot, Java
+
+Database: MySQL8
+
 1. Home Page of the Application:
 ![home](https://github.com/user-attachments/assets/d1f37ba4-d65e-4153-b0b8-76aa6fb1dad4)
 2. News Feeds:
@@ -36,18 +46,6 @@ Sprinboot is used as a middleware for database connection and API generation. My
 
 10. Appointments:
 ![185597534-5e430d89-4cb5-47a3-b523-058a5aebdeca](https://github.com/user-attachments/assets/747809b6-70b6-4a75-ad05-cd14c95d6e46)
-
-
-
-
-# Tech Stack
-
-Client: Angular, HTML, Typescript, CSS, Javascript
-
-Server: Spring boot, Java
-
-Database: MySQL8
-
 
 
 # Frontend For Hospital Management System
