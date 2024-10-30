@@ -1,60 +1,19 @@
 # Hospital Management System Project
 
-The Hospital Management Application is built with Angular and Springboot.
-The primary objective of the project is to design and develop a hospital management website which can be accessed by the doctor and admin.
-Admin dashboard displays the current patient list excluding few sensitve diagnostic details. Admin has the access to maintain the appointment list in his dashboard. 
+The Hospital Management Application is built with Angular and Springboot. The primary objective of the project is to design and develop a hospital management website that can be accessed by the doctor and admin.
 
- # ARCHITECTURE
-The overall architecture would involve:
+The doctor has the authority to view the current list of patients who are under treatment, including their diagnostic details. The doctor can perform CRUD operations with the patients on his dashboard. The doctor has access to add and maintain the medicine list in his dashboard.
 
-1. **Angular Front-end:**
+Admin dashboard displays the current patient list excluding a few sensitive diagnostic details. Admin has access to maintain the appointment list in his dashboard. Admin can also perform CRUD operations in the appointment list.
 
-   - The Angular application would consume the RESTful API provided by the Spring Boot back-end.
-   - It would use Angular components, services, and routing to build the various modules (patient, doctor, billing) and manage the user interface.
-   
-2. **Spring Boot Back-end:**
+Sprinboot is used as a middleware for database connection and API generation. MySQL8 workbench is used as the database. Angular  is used as the frontend framework for component generation, routing, state management, and API calling for all the components.
 
-   - The Spring Boot application would expose the necessary API endpoints for the Angular front-end to interact with.
-   - It would handle the business logic, such as patient management, doctor management, appointment scheduling, and billing.
-   - Spring Data JPA or a similar ORM would be used to interact with the database and perform CRUD operations.
-   - Spring Security would be used to implement authentication and authorization mechanisms.
+# Key features of our system include:
 
-3. **Database Integration:**
+1. Patient Management: Allows staff to register patients, update their information, and view their history.
+2. Appointment Scheduling: Allows staff to register booking and manage patient appointments.
+3. Separate dashboards for doctors and admins
 
-   - The system would use a relational database (e.g., MySQL) to store all the relevant data, such as patient records, doctor profiles, appointment details.
-   - The Spring Boot application would handle the database connections and perform data persistence and retrieval operations.
-
-
-This is a high-level overview of the components and architecture involved in building a hospital management system using Angular and Spring Boot. The actual implementation would involve writing code, configuring the various components, and integrating them to create a fully functional application.
-
-To create a hospital management system using Angular and Spring Boot, we would need to implement the following components:
-
-**Front-end (Angular):**
-
-- Patient Management Module
-  - Patient Registration
-  - Patient Records
-  - Appointment Scheduling
-- Doctor Management Module
-  - Doctor Profiles
-  - Appointment Management
-- Billing and Inventory Module
-  - Billing Records
-  - Medication and Supply Management
-
-**Back-end (Spring Boot):**
-
-- RESTful API Endpoints
-  - Patient CRUD operations
-  - Doctor CRUD operations
-  - Appointment management
-  - Billing and inventory management
-- Database Integration
-  - Connecting to a database (e.g., MySQL) to store patient, doctor, appointment, and billing data
-- Security and Authentication
-  - Implementing user roles (patient, doctor, admin) and access control
-  - Securing the API endpoints with JWT-based authentication
-\
 # Tech Stack
 
 Client: Angular, HTML, Typescript, CSS, Javascript
@@ -63,7 +22,37 @@ Server: Spring boot, Java
 
 Database: MySQL8
 
-# FrontendForHospitalMgmtSystem
+### 1. Home Page of the Application:
+![home](https://github.com/user-attachments/assets/d1f37ba4-d65e-4153-b0b8-76aa6fb1dad4)
+### 2. News Feeds:
+![news](https://github.com/user-attachments/assets/4e779d76-2162-4568-ae32-1900d899ddea)
+
+### 3. Doctor Login Component with Authentication:
+![doctorlogin](https://github.com/user-attachments/assets/a97674ae-2578-43ce-ba5e-b25a2229d7da)
+
+### 4. Doctor Dashboard Component:
+![doctordashboard](https://github.com/user-attachments/assets/ab0b10f6-2e71-445a-93bd-279022f7d88f)
+
+### 5. Add Patient component:
+![addp](https://github.com/user-attachments/assets/448bd631-53fb-4367-9dd4-850173aff46b)
+
+### 6. Updating Patient Details:
+![updatingp](https://github.com/user-attachments/assets/30693dc5-2c32-4ac2-8ec5-5229a72c2f5a)
+
+### 7. Medicine List component:
+![medicallist](https://github.com/user-attachments/assets/6fa06667-769c-444e-96b4-1ca30e9949b3)
+
+### 9. Admin Login component:
+![185597341-bed9ca37-0a27-4709-9e97-06f217b65b24](https://github.com/user-attachments/assets/a66472af-d198-487c-b401-dbd9de97b10e)
+
+### 11. Admin Dashboard component:
+![185597407-8a982dba-0724-42d7-8837-118ad7a2c704](https://github.com/user-attachments/assets/a4364952-a0b3-4900-b858-9ced47895d82)
+
+### 10. Appointments:
+![185597534-5e430d89-4cb5-47a3-b523-058a5aebdeca](https://github.com/user-attachments/assets/747809b6-70b6-4a75-ad05-cd14c95d6e46)
+
+
+# Frontend For Hospital Management System
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
