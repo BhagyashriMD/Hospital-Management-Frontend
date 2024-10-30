@@ -8,16 +8,19 @@ Admin dashboard displays the current patient list excluding few sensitve diagnos
 The overall architecture would involve:
 
 1. **Angular Front-end:**
+
    - The Angular application would consume the RESTful API provided by the Spring Boot back-end.
    - It would use Angular components, services, and routing to build the various modules (patient, doctor, billing) and manage the user interface.
    
 2. **Spring Boot Back-end:**
+
    - The Spring Boot application would expose the necessary API endpoints for the Angular front-end to interact with.
    - It would handle the business logic, such as patient management, doctor management, appointment scheduling, and billing.
    - Spring Data JPA or a similar ORM would be used to interact with the database and perform CRUD operations.
    - Spring Security would be used to implement authentication and authorization mechanisms.
 
 3. **Database Integration:**
+
    - The system would use a relational database (e.g., MySQL) to store all the relevant data, such as patient records, doctor profiles, appointment details.
    - The Spring Boot application would handle the database connections and perform data persistence and retrieval operations.
 
@@ -27,6 +30,7 @@ This is a high-level overview of the components and architecture involved in bui
 To create a hospital management system using Angular and Spring Boot, we would need to implement the following components:
 
 **Front-end (Angular):**
+
 - Patient Management Module
   - Patient Registration
   - Patient Records
@@ -39,6 +43,7 @@ To create a hospital management system using Angular and Spring Boot, we would n
   - Medication and Supply Management
 
 **Back-end (Spring Boot):**
+
 - RESTful API Endpoints
   - Patient CRUD operations
   - Doctor CRUD operations
@@ -49,11 +54,9 @@ To create a hospital management system using Angular and Spring Boot, we would n
 - Security and Authentication
   - Implementing user roles (patient, doctor, admin) and access control
   - Securing the API endpoints with JWT-based authentication
-
-
-
-
+\
 # Tech Stack
+
 Client: Angular, HTML, Typescript, CSS, Javascript
 
 Server: Spring boot, Java
